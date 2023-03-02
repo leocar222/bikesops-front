@@ -1,9 +1,12 @@
-import React from "react";
+import React from 'react';
+import Cards from './Cards';
 
-export default function Home(){
-    return(
-        <div>
-            <h1>home</h1>
-        </div>
-    )
+const Home = () => {
+  return (
+    <div>
+        <Cards></Cards>
+    </div>
+  )
 }
+
+export default Home
