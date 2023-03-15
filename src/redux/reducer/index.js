@@ -1,13 +1,21 @@
-const initialState={}
+import {GET_PRODUCTS} from '../action/actionNames.js'
+const initialState={
+    products:[]
+}
 
 function rootReducer(state=initialState,action){
     switch (action.type) {
-        // case value:
-            
-        //     break;
+        case GET_PRODUCTS:
+            console.log('entraaa');
+            return{
+                ...state,
+                products:action.payload
+            }
+            break;
     
         default:
-            break;
+
+            return state;
     }
 
 }
