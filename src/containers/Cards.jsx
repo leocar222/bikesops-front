@@ -9,7 +9,7 @@ const Cards = () => {
   return(
     <div>{
       products.map((el,index)=>
-      <Card key={index} image={el.image} name={el.name} price={el.price}/>)
+      <Card key={index} image={el.img} name={el.title} price={el.price}/>)
       }
       </div>
   )

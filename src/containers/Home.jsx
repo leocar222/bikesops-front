@@ -6,6 +6,7 @@ import * as action from '../redux/action/index'
 const Home = () => {
     const products=useSelector(state=>state.products)
     const dispatch=useDispatch();
+    useEffect(()=>dispatch(action.loadDb()),[])
     useEffect(()=>dispatch(action.getProducts()),[])
     console.log(products);
   return (

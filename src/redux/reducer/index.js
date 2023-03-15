@@ -1,16 +1,6 @@
 import {GET_PRODUCTS} from '../action/actionNames.js'
 const initialState={
-    products:[{
-        image:'imagen',
-        name:'nombre',
-        price:'precio'
-    },
-    // {
-    //     image:'imagen2',
-    //     name:'nombre2',
-    //     price:'precio2'
-    // }
-]
+    products:[]
 }
 
 function rootReducer(state=initialState,action){
@@ -19,7 +9,7 @@ function rootReducer(state=initialState,action){
             console.log('entraaa');
             return{
                 ...state,
-                // products:action.payload
+                products:action.payload
             }
             break;
     
